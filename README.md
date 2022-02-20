@@ -18,3 +18,17 @@ sudo npm install -g forever
 ```bash
 sudo forever start mainController.js && lt --port 65001 > ./files/url.txt
 ```
+
+
+## global 설치 없이 실행하고 싶을 경우
+
+```bash
+npm install localtunnel
+npm install forever
+```
+
+### Usage
+
+```bash
+sudo node_modules/.bin/forever start mainController.js && node_modules/.bin/lt --port 65001 > ./files/url.txt
+```
